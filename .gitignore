@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Environment variables file
+.env
+
+# Logs and databases
+*.log
+*.db
+
+# Output of the 'coverage' tool
+htmlcov/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Flask related
+instance/
+web/__pycache__/
+web/*.pyc
