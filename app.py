@@ -4,6 +4,10 @@ from run_autogen import use_autogen
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return "Hello, World!"
+
 @app.route('/api/v1/prompt', methods=['POST'])
 def prompt_model():
     data = request.get_json()
@@ -18,4 +22,4 @@ def say_hi():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    app.run(port=5000)
+    app.run()
